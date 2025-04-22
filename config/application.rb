@@ -9,6 +9,10 @@ Bundler.require(*Rails.groups)
 module Onebitjob
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.to_prepare do
+      Devise::RegistrationsController.layout 'application'  
+    end
+    
     config.load_defaults 7.1
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
