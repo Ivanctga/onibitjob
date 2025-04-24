@@ -75,3 +75,5 @@ gem 'bootstrap', '~> 5.3.5'
 gem 'kaminari', '~> 1.2'
 
 gem 'kaminari-bootstrap'
+
+gem 'image_processing', '~> 1.14'
